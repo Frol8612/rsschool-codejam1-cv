@@ -182,7 +182,8 @@ main .main-about-me h3 {
     padding: 15px 0;
 }
 
-main .main-about-me p {
+main p,
+.summory-container {
     font-family: 'Karla-Regular';
     font-size: 1.05em;
     color: rgb(30, 30, 90);
@@ -190,4 +191,28 @@ main .main-about-me p {
 
 main .main-about-me .online-training p:last-child {
     width: 60%;
+}
+
+main .main-summary {
+    padding: 50px;
+    background-color: rgba(53, 53, 187, 0.8);
+    display: flex;
+    justify-content: space-around;
+}
+
+main .main-summary img {
+    width: 256px;
+    height: 256px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+}
+
+main .main-summary .summory-container {
+    width: 350px;
+    color: rgb(235, 235, 235);
+}
+
+main .main-summary .summory-container ul {
+    padding-top: 25px;
+    padding-left: 50px;
 }
