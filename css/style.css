@@ -1,0 +1,9 @@
+body {
+    background-image: url(../img/qbkls.png);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1024px;
+    background-color: green;
+}
