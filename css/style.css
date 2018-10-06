@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: 0.3s;
 }
 
 body {
@@ -15,7 +16,6 @@ a {
     color: rgb(235, 235, 235);
     text-decoration: none;
     height: 100%;
-    transition: 0.2s;
 }
 
 .wrapper {
@@ -47,8 +47,6 @@ header {
         rgba(125, 185, 232, 0) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
-
-    /* background-color: rgba(53, 53, 187, 0.5); */
 }
 
 header .navbar-header {
@@ -95,7 +93,6 @@ nav ul li::after {
     height: 5px;
     background-color: rgba(0, 0, 133);
     transform: scale(0, 0);
-    transition: 0.3s;
     border-radius: 5px;
 }
 
@@ -135,4 +132,62 @@ main .main-head h2 {
     font-size: 4em;
     width: 300px;
     transform: translate(95px, 185px);
+}
+
+main .main-about-me {
+    display: flex;
+    justify-content: space-around;
+    padding: 75px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main .main-about-me .about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+main .main-about-me .about-item:hover {
+    background-color: rgba(235, 235, 235, 1);
+}
+
+main .main-about-me i {
+    font-size: 2em;
+    padding-top: 10px;
+    background-color: rgb(53, 53, 187);
+    width: 70px;
+    height: 70px;
+    line-height: 45px;
+    border-radius: 50%;
+    color: rgb(235, 235, 235);
+}
+
+main .main-about-me .about-item:hover  i {
+    background-color: rgb(235, 235, 235);
+    border:  5px solid rgb(53, 53, 187);
+    color: rgb(53, 53, 187);
+    line-height: 35px;
+}
+
+main .main-about-me h3 {
+    font-family: 'Aclonica-Regular';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: rgb(53, 53, 187);
+    padding: 15px 0;
+}
+
+main .main-about-me p {
+    font-family: 'Karla-Regular';
+    font-size: 1.05em;
+    color: rgb(30, 30, 90);
+}
+
+main .main-about-me .online-training p:last-child {
+    width: 60%;
 }
