@@ -349,3 +349,27 @@ main .my-work-container img:active {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+main .main-contacts {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main .main-contacts .contact-block {
+    margin: 10px 0;
+    color: rgb(53, 53, 187);
+    font-style: 2em;
+}
+
+main .main-contacts .contact-block span {
+    font-weight: bold;
+}
+
+footer {
+    padding: 25px 0 25px 15px;
+    background-color: rgba(53, 53, 187, 0.8);
+    font-family: 'Aclonica-Regular';
+    font-size: 0.90em;
+    text-transform: uppercase;
+    color: rgb(235, 235, 235);
+}
