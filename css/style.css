@@ -174,9 +174,9 @@ main .main-about-me i {
     color: rgb(235, 235, 235);
 }
 
-main .main-about-me .about-item:hover  i {
+main .main-about-me .about-item:hover i {
     background-color: rgb(235, 235, 235);
-    border:  5px solid rgb(53, 53, 187);
+    border: 5px solid rgb(53, 53, 187);
     color: rgb(53, 53, 187);
     line-height: 35px;
 }
@@ -267,7 +267,7 @@ main .main-skills .container-skills .skills-block .skills-item {
     border-radius: 50%;
 }
 
-main .main-skills .container-skills .skills-block  img {
+main .main-skills .container-skills .skills-block img {
     width: 80%;
 }
 
@@ -303,3 +303,49 @@ main .main-skills .container-skills .skills-block:hover {
     transform: scale(1.1, 1.1);
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
+main .main-sample-code {
+    padding: 50px 0;
+    background-color: rgba(53, 53, 187, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .main-sample-code h2,
+main .code-block  h3 {
+    color: rgb(235, 235, 235);
+}
+
+main .sample-code-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+main .code-block {
+    height: 410px;
+}
+
+main .sample-code-container {
+    width: 500px;
+}
+
+main .my-work-container img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+main .my-work-container img:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .my-work-container img:active {
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
