@@ -95,6 +95,7 @@ nav ul li::after {
     background-color: rgba(0, 0, 133);
     transform: scale(0, 0);
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 nav ul li::after {
