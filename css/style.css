@@ -207,6 +207,16 @@ main p,
     color: rgb(30, 30, 90);
 }
 
+main .main-about-me .online-training a {
+    padding: 10px 0;
+    color: rgb(30, 30, 90);
+}
+
+main .main-about-me .online-training a:hover {
+    color: rgb(53, 53, 187);
+    text-decoration: underline;
+}
+
 main .main-about-me .online-training p:last-child {
     width: 60%;
 }
