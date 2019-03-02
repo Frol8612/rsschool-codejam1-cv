@@ -19,6 +19,10 @@ a {
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   width: 1024px;
   color: #fff;
@@ -141,6 +145,7 @@ main .main-head h2 {
   color: rgba(53, 53, 187, 0.8);
   font-size: 4em;
   padding-bottom: 0;
+  align-self: flex-start;
 }
 
 main .main-about-me {
@@ -400,4 +405,12 @@ footer {
   font-size: 0.9em;
   text-transform: uppercase;
   color: rgb(235, 235, 235);
+}
+
+footer p {
+  align-self: flex-start;
+}
+
+footer p span {
+  font-size: 2.5em;
 }
