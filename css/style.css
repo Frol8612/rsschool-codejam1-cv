@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+body {
+    background: url(../img/qbkls.png) repeat;
+    font-size: 16px;
+    position: relative;
+}
+
+a {
+    display: block;
+    color: rgb(235, 235, 235);
+    text-decoration: none;
+    height: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1024px;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    min-width: 1024px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: -moz-linear-gradient(
+        top,
+        rgba(53, 53, 187, 1) 0%,
+        rgba(125, 185, 232, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+        top,
+        rgba(53, 53, 187, 1) 0%,
+        rgba(125, 185, 232, 0) 100%
+    );
+    background: linear-gradient(
+        to bottom,
+        rgba(53, 53, 187, 1) 0%,
+        rgba(125, 185, 232, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 );
+}
+
+header .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    padding: 0 25px;
+}
+
+header .logo {
+    font-family: 'Monoton-Regular';
+    font-size: 1.75em;
+}
+
+header .logo a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    color: rgb(0, 0, 133);
+    transform: scale(1.05, 1.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: 'Electrolize-Regular';
+    font-size: 1.05em;
+    text-transform: uppercase;
+    padding: 25px 15px;
+}
+
+nav ul li::before,
+nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(0, 0, 133);
+    transform: scale(0, 0);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li::after {
+    background-color: rgba(0, 0, 133, 0.7);
+    bottom: 0;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1, 1.1);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+    border-radius: 10px;
+    color: rgb(0, 0, 133);
+}
+
+nav ul li:hover::before,
+nav ul li:hover::after {
+    transform: scale(1, 1);
+}
+
+header .logo a:active,
+nav ul li a:active {
+    transform: scale(0.9, 0.9);
+}
+
+main .main-head {
+    background: url(../img/IMG_7826.png) center center no-repeat;
+    background-size: cover;
+    padding: 225px 0;
+}
+
+main h2 {
+    font-family: 'Aclonica-Regular';
+    text-transform: uppercase;
+    color: rgba(53, 53, 187, 0.8);
+    font-size: 2.5em;
+    padding-bottom: 25px;
+}
+
+main .main-head h2 {
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.7);
+    width: 300px;
+    transform: translate(95px, 185px);
+    color: rgba(53, 53, 187, 0.8);
+    font-size: 4em;
+    padding-bottom: 0;
+}
+
+main .main-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main .main-about-me .about-me-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+main .main-about-me .about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: rgba(235, 235, 235, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+main .main-about-me .about-item:hover {
+    background-color: rgba(235, 235, 235, 1);
+}
+
+main .main-about-me i {
+    font-size: 2em;
+    padding-top: 10px;
+    background-color: rgb(53, 53, 187);
+    width: 70px;
+    height: 70px;
+    line-height: 45px;
+    border-radius: 50%;
+    color: rgb(235, 235, 235);
+}
+
+
+main .main-about-me .about-item:hover i {
+    background-color: rgb(235, 235, 235);
+    border: 5px solid rgb(53, 53, 187);
+    color: rgb(53, 53, 187);
+    line-height: 35px;
+}
+
+main h3 {
+    font-family: 'Aclonica-Regular';
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: rgb(53, 53, 187);
+    padding: 15px 0;
+}
+
+main p,
+.summory-container {
+    font-family: 'Karla-Regular';
+    font-size: 1.05em;
+    color: rgb(30, 30, 90);
+}
+
+main .main-about-me .online-training a {
+    padding: 10px 0;
+    color: rgb(30, 30, 90);
+}
+
+main .main-about-me .online-training a:hover {
+    color: rgb(53, 53, 187);
+    text-decoration: underline;
+}
+
+main .main-about-me .online-training p:last-child {
+    width: 60%;
+}
+
+main .main-summary {
+    padding: 50px;
+    background-color: rgba(53, 53, 187, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-summary h2 {
+    color: rgb(235, 235, 235);
+}
+
+main .main-summary .summory-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    color: rgb(235, 235, 235);
+}
+
+main .main-summary .summory-container img {
+    width: 256px;
+    height: 256px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+}
+
+main .main-summary .summory-container h3 {
+    color: rgb(235, 235, 235);
+}
+
+main .main-summary .summory-container ul {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+main .main-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0;
+    color: rgb(53, 53, 187);
+}
+
+main .main-skills .container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+main .main-skills .container-skills .skills-block {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(53, 53, 187, 0.8);
+    border-radius: 10px;
+    margin: 15px;
+}
+
+main .main-skills .container-skills .skills-block h3 {
+    color: rgb(235, 235, 235);
+}
+
+main .main-skills .container-skills .skills-block .skills-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+main .main-skills .container-skills .skills-block img {
+    width: 80%;
+}
+
+main .main-skills .container-skills .skills-block .css-skills img,
+main .main-skills .container-skills .skills-block .lodash-skills img,
+main .main-skills .container-skills .skills-block .ts-skills img,
+main .main-skills .container-skills .skills-block .vscode-skills img {
+    width: 60%;
+}
+
+main .main-skills .container-skills .skills-block .js-skills img {
+    width: 65%;
+}
+
+main .main-skills .container-skills .skills-block .bootstrap-skills img,
+main .main-skills .container-skills .skills-block .express-skills img {
+    width: 100%;
+}
+
+main .main-skills .container-skills .skills-block .vue-skills img {
+    width: 90%;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+main .main-skills .container-skills .skills-block .git-skills img,
+main .main-skills .container-skills .skills-block .nodejs-skills img,
+main .main-skills .container-skills .skills-block .react-skills img {
+    width: 70%;
+}
+
+main .main-skills .container-skills .skills-block:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .main-sample-code {
+    padding: 50px 0;
+    background-color: rgba(53, 53, 187, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .main-sample-code h2,
+main .code-block  h3 {
+    color: rgb(235, 235, 235);
+}
+
+main .sample-code-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+main .code-block {
+    height: 410px;
+}
+
+main .sample-code-container {
+    width: 500px;
+}
+
+main .my-work-container img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+main .my-work-container img:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .my-work-container img:active {
+    transform: scale(0.9, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+main .main-contacts {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+main .main-contacts .contact-block {
+    margin: 10px 0;
+    color: rgb(53, 53, 187);
+    font-style: 2em;
+}
+
+main .main-contacts .contact-block span {
+    font-weight: bold;
+}
+
+footer {
+    padding: 25px 0 25px 15px;
+    background-color: rgba(53, 53, 187, 0.8);
+    font-family: 'Aclonica-Regular';
+    font-size: 0.90em;
+    text-transform: uppercase;
+    color: rgb(235, 235, 235);
+}
