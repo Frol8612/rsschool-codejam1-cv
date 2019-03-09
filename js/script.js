@@ -20,10 +20,6 @@
         nav.classList.remove('show');
       });
     }
-
-    /* if (target.tagName === 'A') {
-      window.scrollTo(target.id);
-    } */
   });
 
 })();
