@@ -1,0 +1,105 @@
+@media (max-width: 1100px) {
+  header .header__logo a {
+    font-size: 1em;
+  }
+  
+  nav ul li a {
+    font-size: 0.9em;
+  }
+
+  main h2 {
+    font-size: 2em;
+  }
+
+  main .main-head h2 {
+    font-size: 3.5em;
+  }
+
+  main .main-about-me .main-about-me__container {
+    width: 100%;
+  }
+
+  main .main-about-me .about-item {
+    width: 250px;
+  }
+
+  main h3 {
+    font-size: 1em;
+  }
+
+  main p,
+  .summory-container {
+    font-size: 1em;
+  }
+
+  main .main-summary .summory-container {
+    width: 80%;
+  }
+
+  main .main-summary .summory-container img {
+    width: 236px;
+    height: 236px;
+  }
+
+  main .main-skills .container-skills {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  main .main-skills .container-skills .skills-block .skills-item {
+    width: 135px;
+    height: 135px;
+  }
+
+  main .sample-code-wrapper {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    background-color: rgb(53, 53, 187);
+  }
+
+  header .header__navbar .header__btn-menu {
+    position: relative;
+    display: block;   
+    padding: 25px 15px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .active {
+    transform: rotate(90deg);
+  }
+
+  .active::before {
+    content: '\21D2';
+    position: absolute;
+    background-color: rgb(53, 53, 187);
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 85px;
+    background-color: rgb(53, 53, 187);
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: center top;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show {
+    transform: scaleY(1);
+  }
+}
