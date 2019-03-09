@@ -19,15 +19,17 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
   <body>
     <header>
-      <div class="navbar-header">
-        <div class="logo">
+      <div class="header__navbar">
+        <div class="header__logo">
           <a href="https://github.com/Frol8612" target="_blank">Frol8612</a>
         </div>
-        <nav>
+        <button class="header__btn-menu" id="btn-menu">&#9776;</button>
+        <nav id="nav-menu">
           <ul>
             <li>
               <a href="#about">
@@ -67,7 +69,7 @@
       <section class="main-about-me" id="about">
         <div class="wrapper">
           <h2>About me</h2>
-          <div class="about-me-container">
+          <div class="main-about-me__container">
             <div class="about-item education">
               <i class="fas fa-graduation-cap"></i>
               <h3>Education</h3>
@@ -241,29 +243,7 @@
         <div class="wrapper">
           <h2>Sample Code</h2>
           <div class="sample-code-wrapper">
-            <div class="sample-code-container code-block">
-              <h3>My example code</h3>
-              <p
-                data-height="350"
-                data-theme-id="0"
-                data-slug-hash="WaGWGZ"
-                data-default-tab="result"
-                data-user="Frol8612"
-                data-pen-title="WaGWGZ"
-                class="codepen"
-              >
-                See the Pen
-                <a href="https://codepen.io/Frol8612/pen/WaGWGZ/">WaGWGZ</a> by
-                Pavel F (<a href="https://codepen.io/Frol8612">@Frol8612</a>) on
-                <a href="https://codepen.io">CodePen</a>.
-              </p>
-              <script
-                async
-                src="https://static.codepen.io/assets/embed/ei.js"
-              ></script>
-            </div>
-            <div class="my-work-container code-block">
-              <h3>My work</h3>
+            <div class="my-work-container">
               <a href="https://frol8612.github.io/" target="_blank"
                 ><img
                   src="https://github.com/Frol8612/Frol8612.github.io/blob/master/app/images/screenshot1.png?raw=true"
@@ -294,5 +274,7 @@
         <p><span>&copy;</span> Pavel Fralou 2018</p>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
