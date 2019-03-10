@@ -2,7 +2,6 @@
   const btn = document.querySelector('#btn-menu');
   const nav = document.querySelector('#nav-menu');
   const header = document.querySelector('header');
-
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
   btn.addEventListener('click', () => {
@@ -15,6 +14,8 @@
 
   document.addEventListener('click', (e) => {
     const target = e.target;
+    e.preventDefault();
+
     if (
       btn.classList.contains('active') &&
       target !== btn &&
@@ -26,6 +27,12 @@
         nav.classList.remove('show');
         header.classList.remove('show');
       });
+    }
+
+    if (target.dataset.id) {
+      return document
+        .getElementById(target.dataset.id)
+        .scrollIntoView({ behavior: 'smooth', block: "start" });
     }
   });
 })();
