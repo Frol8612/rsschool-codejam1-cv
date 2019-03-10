@@ -64,10 +64,6 @@
 }
 
 @media (max-width: 800px) {
-  header {
-    background-color: rgb(53, 53, 187);
-  }
-
   header .header__navbar .header__btn-menu {
     position: relative;
     display: block;   
@@ -84,8 +80,7 @@
   nav {
     position: absolute;
     right: 0;
-    top: 85px;
-    background-color: rgb(53, 53, 187);
+    top: 87px;
     width: 100%;
     transform: scaleY(0);
     transform-origin: center top;
@@ -98,6 +93,7 @@
 
   .show {
     transform: scaleY(1);
+    background-color: rgb(53, 53, 187);
   }
 
   header .header__logo a {
@@ -126,12 +122,14 @@
   }
 
   main .main-summary .summory-container {
-    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   main .main-summary .summory-container img {
-    width: 196px;
-    height: 196px;
+    width: 95px;
+    height: 95px;
   }
 
   main .main-skills .container-skills {
