@@ -14,7 +14,7 @@
 
   document.addEventListener('click', (e) => {
     const target = e.target;
-    e.preventDefault();
+
 
     if (
       btn.classList.contains('active') &&
@@ -30,6 +30,7 @@
     }
 
     if (target.dataset.id) {
+      e.preventDefault();
       return document
         .getElementById(target.dataset.id)
         .scrollIntoView({ behavior: 'smooth', block: "start" });
