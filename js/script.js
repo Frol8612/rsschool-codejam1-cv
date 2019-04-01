@@ -14,7 +14,6 @@
 
   document.addEventListener('click', (e) => {
     const target = e.target;
-    e.preventDefault();
 
     if (
       btn.classList.contains('active') &&
@@ -29,10 +28,23 @@
       });
     }
 
-    if (target.dataset.id) {
+    if (target.hash) {
+      e.preventDefault();
       return document
-        .getElementById(target.dataset.id)
+        .getElementById(target.hash.slice(1))
         .scrollIntoView({ behavior: 'smooth', block: "start" });
+    }
+  });
+
+  document.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.clientHeight;
+    const linkUp = document.querySelector('#link-up');
+  
+    if (scrollTop > scrollHeight ) {
+      linkUp.classList.add('show');
+    } else {
+      linkUp.classList.remove('show')
     }
   });
 })();

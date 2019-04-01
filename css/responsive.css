@@ -99,6 +99,16 @@
   header .header__logo a {
     font-size: 0.95em;
   }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li::before,
+  nav ul li::after {
+    left: 0;
+  }
   
   nav ul li a {
     font-size: 0.85em;
