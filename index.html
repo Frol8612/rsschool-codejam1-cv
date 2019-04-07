@@ -19,45 +19,47 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
 
   <body>
     <header id="header">
-      <div class="header__navbar">
-        <div class="header__logo">
-          <a href="https://github.com/Frol8612" target="_blank">Frol8612</a>
+      <div class="wrapper">
+        <div class="header__navbar">
+          <div class="header__logo">
+            <a href="https://github.com/Frol8612" target="_blank">Frol8612</a>
+          </div>
+          <button class="header__btn-menu" id="btn-menu">&#9776;</button>
+          <nav id="nav-menu">
+            <ul>
+              <li>
+                <a href="#about">
+                  About me
+                </a>
+              </li>
+              <li>
+                <a href="#summary">
+                  Summary
+                </a>
+              </li>
+              <li>
+                <a href="#skills">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#sample">
+                  Sample code
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <button class="header__btn-menu" id="btn-menu">&#9776;</button>
-        <nav id="nav-menu">
-          <ul>
-            <li>
-              <a href="#about">
-                About me
-              </a>
-            </li>
-            <li>
-              <a href="#summary">
-                Summary
-              </a>
-            </li>
-            <li>
-              <a href="#skills">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#sample">
-                Sample code
-              </a>
-            </li>
-            <li>
-              <a href="#contact">
-                Contacts
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -242,38 +244,36 @@
       <section class="main-sample-code" id="sample">
         <div class="wrapper">
           <h2>Sample Code</h2>
-          <div class="sample-code-wrapper">
-            <div class="my-work-container">
-              <a href="https://frol8612.github.io/" target="_blank"
-                ><img
-                  src="https://github.com/Frol8612/Frol8612.github.io/blob/master/app/images/screenshot1.png?raw=true"
-                  alt="game"
-              /></a>
-            </div>
+          <div class="my-work-container">
+            <a href="https://frol8612.github.io/" target="_blank"
+              ><img
+                src="https://github.com/Frol8612/Frol8612.github.io/blob/master/app/images/screenshot1.png?raw=true"
+                alt="game"
+            /></a>
           </div>
         </div>
       </section>
       <section class="main-contacts" id="contact">
-        <h2>Contacts</h2>
-        <div class="contacts-container">
-          <div class="contact-block">
-            <i class="fas fa-at"></i>
-            <span>Email:</span> infern00730@gmail.com
-          </div>
-          <div class="contact-block">
-            <i class="fas fa-phone"></i><span> Phone:</span> +375293276287
-          </div>
-          <div class="contact-block">
-            <i class="fab fa-skype"></i><span> Skype:</span> frol865
+        <div class="wrapper">
+          <h2>Contacts</h2>
+          <div class="contacts-container">
+            <div class="contact-block">
+              <i class="fas fa-at"></i>
+              <span>Email:</span> infern00730@gmail.com
+            </div>
+            <div class="contact-block">
+              <i class="fas fa-phone"></i><span> Phone:</span> +375293276287
+            </div>
+            <div class="contact-block">
+              <i class="fab fa-skype"></i><span> Skype:</span> frol865
+            </div>
           </div>
         </div>
       </section>
       <a href="#header" id="link-up" class="link-up">&#8679;</a>
     </main>
     <footer>
-      <div class="wrapper">
-        <p><span>&copy;</span> Pavel Fralou 2018</p>
-      </div>
+      <p><span>&copy;</span> Pavel Fralou 2018</p>
     </footer>
 
     <script src="js/script.js"></script>

@@ -18,14 +18,6 @@ a {
   height: 100%;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1024px;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -46,8 +38,6 @@ header .header__navbar {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1024px;
-  padding: 0 25px;
 }
 
 header .header__navbar .header__btn-menu {
@@ -118,11 +108,30 @@ nav ul li a:active {
   transform: scale(0.9, 0.9);
 }
 
+main section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+main section h2 {
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1140px;
+}
+
 main .main-head {
   position: relative;
   background: url(../img/IMG_7826.png) center center no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 
 main .main-head::before {
@@ -140,7 +149,6 @@ main h2 {
   text-transform: uppercase;
   color: rgba(53, 53, 187, 0.8);
   font-size: 2.5em;
-  padding-bottom: 25px;
 }
 
 main .main-head h2 {
@@ -154,11 +162,6 @@ main .main-head h2 {
 }
 
 main .main-about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
@@ -231,12 +234,7 @@ main .main-about-me .online-training p:last-child {
 }
 
 main .main-summary {
-  padding: 50px;
   background-color: rgba(53, 53, 187, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 main .main-summary h2 {
@@ -267,12 +265,7 @@ main .main-summary .summory-container ul {
 }
 
 main .main-skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 50px 0;
   color: rgb(53, 53, 187);
 }
 
@@ -343,24 +336,11 @@ main .main-skills .container-skills .skills-block:hover {
 }
 
 main .main-sample-code {
-  padding: 50px 0;
   background-color: rgba(53, 53, 187, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 main .main-sample-code h2 {
   color: rgb(235, 235, 235);
-}
-
-main .sample-code-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
 }
 
 main .my-work-container img {
@@ -379,9 +359,7 @@ main .my-work-container img:active {
 }
 
 main .main-contacts {
-  padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.5);
-  text-align: center;
 }
 
 main .main-contacts .contact-block {
@@ -395,7 +373,10 @@ main .main-contacts .contact-block span {
 }
 
 footer {
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
   background-color: rgba(53, 53, 187, 0.8);
   font-family: 'Aclonica-Regular';
   font-size: 0.9em;
@@ -434,6 +415,6 @@ footer p span {
   transform: scale(0.8, 0.8)
 }
 
-.show {
+.show-link {
   transform: scale(1, 1);
 }

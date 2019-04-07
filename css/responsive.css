@@ -1,4 +1,4 @@
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   header .header__logo a {
     font-size: 1em;
   }
@@ -59,11 +59,11 @@
   }
 
   .wrapper {
-    width: 80%;
+    width: 960px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   header .header__navbar .header__btn-menu {
     position: relative;
     display: block;   
@@ -80,7 +80,7 @@
   nav {
     position: absolute;
     right: 0;
-    top: 87px;
+    top: 86px;
     width: 100%;
     transform: scaleY(0);
     transform-origin: center top;
@@ -91,7 +91,7 @@
     align-items: center;
   }
 
-  .show {
+  .show-menu {
     transform: scaleY(1);
     background-color: rgb(53, 53, 187);
   }
@@ -118,7 +118,12 @@
     font-size: 1.9em;
   }
 
+  main .main-head {
+    padding-left: 10px;
+  }
+
   main .main-head h2 {
+    transform: translate(30px, 250px); 
     font-size: 3em;
   }
 
@@ -152,6 +157,17 @@
   }
 
   .wrapper {
-    width: 90%;
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .main-head h2 {
+    font-size: 2.5em;
+    transform: translate(15px, 270px);
+  }
+
+  .wrapper {
+    width: 540px;
   }
 }
