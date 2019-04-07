@@ -123,6 +123,7 @@
   }
 
   main .main-head h2 {
+    width: 200px;
     transform: translate(30px, 250px); 
     font-size: 3em;
   }
@@ -163,6 +164,7 @@
 
 @media (max-width: 768px) {
   main .main-head h2 {
+    width: 100px;
     font-size: 2.5em;
     transform: translate(15px, 270px);
   }
