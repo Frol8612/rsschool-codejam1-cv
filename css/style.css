@@ -120,14 +120,6 @@ main section h2 {
   margin-bottom: 50px;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 1140px;
-}
-
 main .main-head {
   position: relative;
   background: url(../img/IMG_7826.png) center center no-repeat;
@@ -343,6 +335,10 @@ main .main-sample-code h2 {
   color: rgb(235, 235, 235);
 }
 
+main .my-work-container {
+  text-align: center;
+}
+
 main .my-work-container img {
   width: 100%;
   border-radius: 10px;
@@ -417,4 +413,12 @@ footer p span {
 
 .show-link {
   transform: scale(1, 1);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1140px;
 }
